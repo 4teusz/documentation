@@ -1,0 +1,50 @@
+Linux commands:
+
+scp -P port /folder/file login@10.10.10.10:/folder #copy file by ssh
+
+mutt -s "Subject" email@addres < filewithemail.txt
+
+script bash
+
+variable=$(command)
+
+if [statement]
+then
+	#do
+fi
+
+subshell to prevetn displaying commnad in script (command)
+
+screen:
+	create screen session:
+		screen -dmSt sessionName sh command
+		
+	display session:
+		screen -list
+	kill session
+		screen -X -S id.sessionName kill
+		
+
+. ~/.bashrc #reload bash 
+
+vim-boostrap create init.vim
+
+
+Change default editor for sudo
+
+	1. sudo update-alternatives --config editor
+	2. pick editor
+	
+	sudo -e "file to edit"
+
+
+
+update debian:
+	Backup your system.
+	Update existing packages and reboot the Debian 9.x system.
+	Edit the file /etc/apt/sources.list using a text editor and replace each instance of stretch with buster.
+	Update the packages index on Debian Linux, run: sudo apt update
+	Prepare for the operating system upgrade, run: sudo apt upgrade
+	Finally, update Debian 9 to Debian 10 buster by running: sudo apt full-upgrade
+	Reboot the Linux system so that you can boot into Debian 10 Buster
+	Verify that everything is working correctly.

@@ -1,0 +1,22 @@
+clone fzf
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
+run isntaller
+	cd .fzf/
+	./install
+
+in bashrc	
+	vim ~/.bashrc
+add
+	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+	export FZF_DEFAULT_OPS="--extended"
+	
+dipsly only files by Ctrl-t
+	export FZF_DEFAULT_COMMAND="fdfind -t f"
+	export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"   
+	
+usfull:
+
+Ctrl-r  show lastlast commands(history)
+Ctrl-t show sub folders
+
+** Tab	show all sub files
